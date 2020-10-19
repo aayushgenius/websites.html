@@ -1,0 +1,597 @@
+.accordion {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-family: verdana;
+}
+.active,
+.accordion:hover {
+    background-color: blue;
+}
+
+.accordion:after {
+    content: '\002B';
+    /* code for addition symbol */
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.accordion:active {
+  background-color: aqua;
+}
+.active:after {
+    content: "\2212";
+    /*code for minus sign on panel */
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #41B3A3;
+}
+
+.nz {
+    color: white;
+    font-size: 17px;
+    font-style: normal;
+    font-family: verdana;
+}
+
+body {
+    background-color: #41B3A3;
+    position: relative;
+    background-color: orange;
+    font-family: Verdana;
+}
+
+h1 {
+    color: black;
+    font-size: 17px;
+    font-style: normal;
+    font-family: verdana;
+    font-size: 35px;
+    background-color: lime;
+}
+
+.saccordion {
+    background-color: white;
+    color: tomato;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 1s;
+    font-family: verdana;
+}
+
+.saccordion:after {
+    content: '\002B';
+    /* code for addition symbol */
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active,
+.saccordion:hover {
+    background-color: blue;
+}
+
+.nzh {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-family: verdana;
+}
+
+.listitem {
+    color: white;
+    background-color: inherit;
+    padding: 10px;
+    font-family: verdana;
+    position: absolute;
+}
+
+.mainframewebsite {
+    /* 1st div design and home pages first look */
+    background-color: yellow;
+    color: solid black;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+#maintext {
+    /*the text for all webpages in website*/
+    background-color: green;
+    color: greenyellow;
+    padding: 5px;
+}
+
+.div1text {
+    /* the text for navbar only*/
+    background-color: blueviolet;
+    color: rgb(253, 228, 4);
+    padding: 5px;
+    text-align: center;
+    text-emphasis: bold;
+    align-content: center;
+    padding-bottom: 15px;
+}
+
+< !DOCTYPE html><html><head><meta name="viewport"content="width=device-width, initial-scale=1"><link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.container {
+    width: 100%;
+    background-color: black;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+/* Green */
+.css {
+    width: 88.5%;
+    background-color: #2196F3;
+}
+
+/* Blue */
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+/* Red */
+.php {
+    width: 75.5%;
+    background-color: #808080;
+    align-content: center;
+}
+
+/* Dark Grey */
+.py {
+    width: 75%;
+    background-color: blueviolet;
+    align-content: center;
+}
+
+.bs {
+    width: 75%;
+    background-color: brown;
+    align-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4    {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("https://www.analyticsindiamag.com/wp-content/uploads/2019/04/pankaj-patel-561360-unsplash.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://html.com/wp-content/uploads/html-hpg-sublime.png");
+    min-height: 400px;
+}
+.bgimg-4 {
+    background-image: url("https://i.stack.imgur.com/ckrpy.png");
+    min-height: 400px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.modalbutton-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modalbutton-body {
+    padding: 2px 16px;
+}
+
+.modalbuttonfooter {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modalbutton-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.mainbutton {
+    background-color: grey;
+    font-family: verdana;
+    font-size: 25px;
+    color: white;
+    align-content: center;
+}
+
+.modalbutton {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modalbutton-content {
+    background-color: seagreen;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*flip card time*/
+.flip-card {
+  /*main front face of the card very important */
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  /*the inside part */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: black;
+}
+
+.flip-card:hover .flip-card-inner {
+  /*when your mouse touches the card what happens*/
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  /* transition between the front of the flip card and the back of it*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family: verdana;
+}
+
+.flip-card-front {
+  /*the front interface of the card */
+  background-color: limegreen;
+  color: black;
+}
+
+.flip-card-back {
+  /* back interface*/
+  background-color: red;
+  color: black;
+  transform: rotateY(180deg);
+  /* rotating the card*/
+}
+
+/*grid*/
+.grid-container {
+  /*to sort out the grid of cards */
+  display: flex;
+  grid-template-columns: auto auto auto;
+  flex-direction: row;
+}
+
+.grid-item {
+  /* item inside the grid*/
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+}

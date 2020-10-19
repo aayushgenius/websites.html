@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UPPRO - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .flip-card {
+      /*main front face of the card very important */
+      background-color: aqua;
+      width: 350px;
+      height: 350px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      /*the inside part */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+      box-shadow: black;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      /*when your mouse touches the card what happens*/
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      /* transition between the front of the flip card and the back of it*/
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      font-family: verdana;
+    }
+
+    .flip-card-front {
+      /*the front interface of the card */
+      background-color: limegreen;
+      color: black;
+    }
+
+    .flip-card-back {
+      /* back interface*/
+      background-color: aqua;
+      color: black;
+      transform: rotateY(180deg);
+      /* rotating the card*/
+    }
+
+    /*grid*/
+    .grid-container1 {
+      /*to sort out the grid of cards */
+      display: flex;
+      grid-template-columns: auto auto auto;
+      flex-direction: row;
+    }
+
+    .grid-item {
+      /* item inside the grid*/
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      text-align: center;
+    }
+
+    .fakeimg {
+      height: 200px;
+    }
+    body {
+      background-color : orange;
+      text-align: justify;
+    }
+    .img1 {
+      width : 500px;
+      height : 350px;
+    }
+    .partners {
+      width : 250px;
+      height : 250px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="background-color : aqua;
+    position: sticky;
+    ">
+      <h1>UPPRO - Connecting Farmers to the Market!</h1>
+      <p>Copyright 2020, UPPRO.</p>
+      <br> <br>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <a class="navbar-brand" href="home_page.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fs.html">Financial Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ml.html">Market Linkages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ti.html">Technology Intervention</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <h1>Technology Intervention</h1>
+    <p>Linking farmers with the technology to create competitive advantage has always been a prime objective for UPPRO. On the technology front, following interventions have been done : <br></p>
+    <ol>
+      <li><b>Digtization of FPOs</b></li>
+    </ol>
+      <p>Most Farmer Producer Organizations (FPO) are relatively new companies and tend to <br>
+        operate using manual processes and methods. Day-to-day operations of FPOs require <br>
+        co-ordination between the shareholder farmers, supporting institutions and other players in the ecosystem like buyers, suppliers and logistics operators. The speed of operations and successful scale-up of an FPO is heavily impacted by the number of people it can hire to manage the daily co-ordination, office and field operations.
+        <br> <br>
+        Typical FPOs are limited to operate with usually two or three dedicated employees to minimize the cost of operations. Further manual recordkeeping and maintaining multiple record books increases the chances of error and makes reconciliation across business transactions difficult. This makes the case for simple digital tools for FPOs which can help improve the operational efficiency of the FPO workforce and also aid in digitally tracking all business transactions in an easy and secure manner while digitizing the entire business, operations, and financial activities of an FPO.
+        <br> <br>
+        UPPRO has undertaken FPO digitization with the following objectives:
+        </p>
+        <ol>
+          <li>. To increase efficiency, effectiveness and decision making in FPO business operation using technology platform. This will mainly include Shareholder data management, Inputs Stock and Sales tracking, Shareholder Crops and Outputs Sales tracking, FPO Business and operational metrics dashboards. </li>
+          <br> <br>
+          <li>To ensure technology intervention will bring efficient, faster and cost effective services for farmer members</li>
+          <br> <br>
+        </ol>
+        <p>Total 2 FPOs have been fully digitized with the help of CDFI (Centre for Digital Financial Inclusion, Delhi ). Work is going on in 3 more FPOs to digitize their business operations. The following activities have been completed in FPO digitization:</p>
+        <br> <br>
+        <ol>
+          <li>Farmer data repository</li><br> <br>
+          <li>All activities of Input and output digitized</li>
+          <br> <br>
+          <li>Farmers’ produce aggregation during COVID-19</li>
+          <br> <br>
+        </ol>
+        <img src="http://uppro.co.in/wp-content/uploads/2020/09/Digitization-of-FPOs-1024x768.jpeg" alt="Digitalization of FPOs">
+        <h2><b>Farm mechanization </b></h2>
+        <br> <br>
+        <p>UPPRO facilitated FPOs in establishing a custom hiring bank /farm machinery bank. 36 FPOs have so far been facilitated in establishing a farm machinery bank The objectives of this intervention has been:</p>
+        <ul>
+          <li>Enhancement of timeliness and profitability in farm operations</li>
+          <br> <br>
+          <li>Provision of good finishes for manually unattainable farm operations</li>
+          <br> <br>
+          <li>Reduction of boredom and drudgery in farm operations</li>
+          <br> <br>
+          <li>Reduction of labour requirements and enhancement of agricultural production through higher rates of work output</li>
+        </ul>
+        <img src="http://uppro.co.in/wp-content/uploads/2020/09/farmm-1024x576.jpg" alt="Farm">
+        
+  </body>
+</html>

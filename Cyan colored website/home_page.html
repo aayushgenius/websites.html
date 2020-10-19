@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UPPRO - Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="gradients.css">
+  <style>
+  .flip-card {
+    /*main front face of the card very important */
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: block;
+  }
+
+  .flip-card-inner {
+    /*the inside part */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: black;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    /*when your mouse touches the card what happens*/
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    /* transition between the front of the flip card and the back of it*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: verdana;
+  }
+
+  .flip-card-front {
+    /*the front interface of the card */
+    background-color: limegreen;
+    color: black;
+  }
+
+  .flip-card-back {
+    /* back interface*/
+    background-color: aqua;
+    color: black;
+    transform: rotateY(180deg);
+    /* rotating the card*/
+  }
+
+  /*grid*/
+  .grid-container1 {
+    /*to sort out the grid of cards */
+    display: flex;
+    grid-template-columns: auto auto auto ;
+    flex-direction: row;
+  }
+
+  .grid-item {
+    /* item inside the grid*/
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  .fakeimg {
+    height: 200px;
+  }
+  body {
+    background-color : white;
+    text-align: justify;
+  }
+  .img1 {
+    width : 500px;
+    height : 350px;
+  }
+  .partners {
+    width : 250px;
+    height : 250px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron text-center" style="background-color : aqua">
+    <h1>UPPRO - Connecting Farmers to the Market!</h1>
+    <p>Copyright 2020, UPPRO.</p>
+    <br> <br>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">About Us</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="who_we_are.html">Who we are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services/services.html"> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services/services.html"> Services</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Our Vision</h3>
+        <p>Enhancing small and marginal farmers’ livelihood  through technology and improve profitability.
+            Improve the livelihoods of small and marginalized farmers through market and technology-based interventions</p>
+            <h3>Our Mission</h3>
+            <p>Provide end-to-end services in agriculture and allied products to aid farmers achieve a self-sustaining and respectful livelihood.</p>
+            <img src="http://uppro.co.in/wp-content/uploads/2020/08/UPPTO-AIMS-1024x576.png" class="img1">
+      </div>
+      <div class="col-sm-6">
+        <h3>Our Objective</h3>
+        <p>To undertake policy advocacy, explore wider market and strategic partnership for FPOs <br> <br>
+          To facilitate FPO’s for carrying out all agriculture extension activities for benefit of farmers. <br><br>
+          Procure &amp; Supply agri inputs like seed, fertilizer, manure, pesticide, micro-nutrient etc to the
+          FPO’s at economic rates, timely and at doorstep. <br> <br>
+          To create infrastructure for procuring, storing, grading and processing of agriculture produce of <br>
+          the FPO’s members and support the FPO’s for marketing through direct purchase, linkage and <br>
+          value addition. <br> <br>
+          Providing extension services in close coordination with the Agriculture and other line
+          departments for reaching the benefits to the small and marginal farmers. <br> <br>
+          To Promote Pulses, Vegetables and Dairy Cluster under different projects extended by <br>
+          government/other agency.</p>
+      </div>
+    </div>
+  </div>
+  <br> <br> <br>
+  <h1 style="text-align : center;">Our Partners</h1>
+  <!--Now partners-->
+  <a href="hp.html">
+    <img class = "partners"src="http://uppro.co.in/wp-content/uploads/2020/06/bbbhhbbb.jpg" alt="HarvestPlus">
+  </a>
+  <a href="SFAC.html">
+    <img class = "partners"src="http://uppro.co.in/wp-content/uploads/2020/09/SFAC.png" alt="SFAC">
+  </a>
+  <a href="RF.html">
+    <img class = "partners"src="http://uppro.co.in/wp-content/uploads/2020/09/reliance-fresh-logo-768x427.png" alt="Reliance Fresh">
+  </a>
+  <a href="CDFI.html">
+    <img class = "partners"src="http://uppro.co.in/wp-content/uploads/2020/09/rsz_cdfi__logo-1.jpg" alt="CDFI">
+  </a>
+  <a href="bayer.html">
+    <img class = "partners"src="http://uppro.co.in/wp-content/uploads/2020/09/Bayer-Logo.png" alt="Bayer">
+  </a>
+  <br> <br> <br> <br> <br> <br> <br>
+
+</body>
+</html>

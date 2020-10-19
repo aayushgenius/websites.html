@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>UPPRO - Initiative and Outreach</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale = 1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    .flip-card {
+      /*main front face of the card very important */
+      background-color: aqua;
+      width: 400px;
+      height: 400px;
+      perspective: 1000px;
+      display: block;
+    }
+
+    .flip-card-inner {
+      /*the inside part */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+      box-shadow: black;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      /*when your mouse touches the card what happens*/
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      /* transition between the front of the flip card and the back of it*/
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      font-family: verdana;
+    }
+
+    .flip-card-front {
+      /*the front interface of the card */
+      background-color: limegreen;
+      color: black;
+    }
+
+    .flip-card-back {
+      /* back interface*/
+      background-color: aqua;
+      color: black;
+      transform: rotateY(180deg);
+      /* rotating the card*/
+    }
+
+    /*grid*/
+    .grid-container1 {
+      /*to sort out the grid of cards */
+      display: flex;
+      grid-template-columns: auto auto auto ;
+      flex-direction: row;
+    }
+
+    .grid-item {
+      /* item inside the grid*/
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      text-align: center;
+    }
+
+    .fakeimg {
+      height: 200px;
+    }
+    body {
+      background-color : white;
+      text-align: justify;
+    }
+    .img1 {
+      width : 500px;
+      height : 350px;
+    }
+    .partners {
+      width : 250px;
+      height : 250px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="background-color : aqua">
+      <h1>UPPRO - Connecting Farmers to the Market!</h1>
+      <p>Copyright 2020, UPPRO.</p>
+      <br> <br>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">About Us</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="init.html">Initiative and Outreach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services/services.html">Zn Fortified Seed Replication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services/services.html"> Services</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1><b>Addressing Malnutrition in UP</b></h1>
+    <h6>Intervention in association with HarvestPlus à seed and grain production of Zn fortified wheat and Iron fortified Pearl Millet</h6>
+    <br> <br>
+
+
+    <p>Uttar Pradesh (UP) is the most populous state in India and has one of the highest rates of malnutrition in the world – half the children under age of 5 years have stunted linear growth. In addition to its high poverty rates, UP’s undernutrition rates are among the highest in the world.
+      <br> <br>
+      To address malnutrition and undernutrition in Uttar Pradesh, UPPRO, in association with Harvest Plus, has initiated work on production of Zn fortified wheat seeds and grains. Till now total production of 400 quintals of Zn fortified wheat seeds and grains production has been completed.
+      <br> <br>
+      Harvest Plus leads a global effort to improve nutrition and public health by developing and disseminating staple food crops that are rich in vitamins and minerals. Harvest Plus is a part of the CGIAR research programme on Agriculture for Nutrition and Health. Harvest Plus improves nutrition and public health in India by promoting pearl millet that provides more iron and wheat that provides more zinc in the diet. Harvest Plus and its partners work in five states of India to promote the availability, adoption, and consumption of biofortified pearl millet and wheat.
+      <br>
+
+
+    </p>
+    <img src="http://uppro.co.in/wp-content/uploads/2020/09/kk-1024x768.jpg" alt="UPPRO">
+
+
+    <h2>The intervention strategy of UPPRO with Harvest Plus is mentioned in the below figure:</h2>
+    <img src="http://uppro.co.in/wp-content/uploads/2020/09/ok.png" alt="FPO">
+
+    <h5><u>Production of Pearl millet grain</u></h5>
+    <p>UPPRO in association with Harvest plus has initiated the production of Iron fortified pearl millet in Uttar Pradesh. This year, total cultivation was undertaken in 143 acres of land with 75 farmers in 3 districts. The intervention has been taken to address the Iron deficiency in women and children’s</p>
+    <br> <br>
+    <img src="http://uppro.co.in/wp-content/uploads/2020/09/ww-1024x768.jpg" alt="UPPRO">
+
+
+  </body>
+</html>

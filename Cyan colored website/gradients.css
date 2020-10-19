@@ -1,0 +1,17 @@
+.gradient1 {
+  background-image: linear-gradient(to right, rgba(2,0,36,1), rgba(121,9,119,1), rgba(0,212,255,1));
+  color: white;
+}
+.gradient-1 {
+  background-image: linear-gradient(to left, rgba(2,0,36,1), rgba(121,9,119,1), rgba(0,212,255,1));
+  color: white;
+}
+.gradient2 {
+  background-image: linear-gradient(to right, rgb(31, 255, 251), rgb(21, 255, 0), rgb(255, 0, 0));
+  color: white;
+}
+.gradient-2 {
+  background-image: linear-gradient(to left, rgb(31, 255, 251), rgb(21, 255, 0), rgb(255, 0, 0));
+  color: white;
+}
+linear-gradient(to left, rgb(31, 255, 251), rgb(21, 255, 0), rgb(255,255,0));
